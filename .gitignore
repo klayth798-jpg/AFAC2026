@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- AFAC2026 项目专属 ----
+# 解析缓存(可由 parse.py 重新生成,不入库)
+cache/
+# 运行日志与临时/中间产物(*.log 已被上面规则忽略,这里显式覆盖 output 下的)
+output/*.log
+output/test_*
+# summary.json 为每次运行的中间统计,不入库(提交只需 answer.csv)
+output/summary.json
